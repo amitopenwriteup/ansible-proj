@@ -7,7 +7,7 @@ In lab4 we have created the role test, please push to git hub
 4) ansible-galaxy import <GitHub user name> <repo name on github> --token <token id>
 example
 
-ansible-galaxy import amitopenwriteup myansiblerole --token 208fb92ea9dfe552476822dd01a8dd1b02ea13e7
+ansible-galaxy import amitopenwriteup myansiblerole --token <tokenid>
 
 
 output
