@@ -23,7 +23,10 @@ create a yaml file(lab3.yaml)
         mode: '0644'
 
 
+touch index.html
+
 ansible-playbook -i inventory.ini lab3.yaml
+
 
 -----------------------
 
