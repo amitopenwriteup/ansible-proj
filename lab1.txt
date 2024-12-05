@@ -22,5 +22,5 @@ create a folder
 1) mkdir labs
 2) create inventory file (inventory.ini)
 [my_hosts]
-192.168.111.131 ansible_user=amit
+192.168.111.131 ansible_user=amit ansible_connection=ssh
 3) ansible -i inventory.ini all -m ping

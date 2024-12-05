@@ -1,6 +1,8 @@
 lab4:
 
-1) ansible-galaxy role init test
+1) Run below command
+
+ ansible-galaxy role init test
 
 2) go to lab3.yaml, copy the section, to test/tasks/main.yaml
 
@@ -20,7 +22,7 @@ lab4:
 
 touch test/files/index.html
 
-4) create a playbook lab4.yaml
+4) create a playbook lab4.yaml, outside of test folder
 
 ---
 - hosts: all
