@@ -7,9 +7,9 @@ ansible-vault create vault.yml
 ansible_user_password: "YourSecurePassword"
 
 #Open inventory file (with .ini extension), provide machine ip addresss
+[remote]
+192.168.111.131 ansible_connection=ssh ansible_user=amit ansible_become_user=root ansible_become_password="{{ ansible_user_password }}" 
 
-[myhosts]
-192.168.111.130  ansible_connection=ssh ansible_user=amit ansible_user_pass="{{ ansible_user_password }}"
 
 #Run ansible-playbook command
 
