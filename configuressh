@@ -1,0 +1,13 @@
+//From control node :
+ssh-keygen -t rsa [ generate public/privatekey pair, don't provide passprases]
+ssh-copy-id <remotemachine username>@<manange ndopdeip>
+//example: ssh-copy-id  amit@192.168.111.131
+//Test password less:
+ssh amit@192.168.111.131
+//Udpdate inventory file
+[target]
+localhost ansible_connection=local
+192.168.111.131 ansible_connection=ssh become_user=amit ansible_user=amit
+//Run the command
+ansible -i inventory.ini all -m ping
+
