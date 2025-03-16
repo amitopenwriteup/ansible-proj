@@ -1,0 +1,18 @@
+//create yaml file multiplay.yaml
+- name: My first play
+  hosts: remote
+  tasks:
+   - name: Ping my hosts
+     ansible.builtin.ping:
+   - name: Print message
+     ansible.builtin.debug:
+       msg: Hello world
+- name: My second play
+  hosts: target
+  tasks:
+   - name: Print message
+     ansible.builtin.debug:
+       msg: Hello world
+
+//run command
+ansible-playbook -i inventory.ini multiplay.yaml
