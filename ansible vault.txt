@@ -11,9 +11,6 @@ ansible_user_password: "YourSecurePassword"
 192.168.111.131 ansible_connection=ssh ansible_user=amit ansible_become_user=root ansible_become_password="{{ ansible_user_password }}" 
 
 
-#Run ansible-playbook command
-
-ansible myhosts -i inventory.ini -m ping --ask-vault-pass
 
 ---
 - hosts: all
