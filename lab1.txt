@@ -7,11 +7,11 @@ example
 host1 (control node):  10.0.15.1
 host2 (manage node): 10.0.15.2
 
-1) On manage node generate the public private key pair for the user
+1) On control node generate the public private key pair for the user
 
 ssh-keygen -t rsa 
 
-2) Now from the managned node, it will promopt for username and password
+2) Now from the control  node, it will promopt for username and password
 
 ssh-copy-id root@10.0.15.2
 
