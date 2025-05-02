@@ -4,7 +4,7 @@ ansible-vault create vault.yml
 
 # In above open yml file, provide your remote machine password
 
-ansible_user_password: "YourSecurePassword"
+ansible_user_password: student
 
 #Open inventory file (with .ini extension), provide machine ip addresss
 [remote]
