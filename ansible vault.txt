@@ -32,3 +32,4 @@ ansible_user_password: student
         mode: '0644'
 
 
+ansible-playbook -i inventory.ini lab.yaml --ask-vault-pass
