@@ -19,8 +19,8 @@ ansible_user_password: student
     - vault.yml
   tasks:
     - name: Install apache httpd
-      ansible.builtin.apt:
-        name: apache2
+      ansible.builtin.dnf:
+        name: httpd
         state: present
         update_cache: yes
     - name: Copy file with owner and permissions
